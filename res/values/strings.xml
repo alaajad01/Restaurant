@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Happy Restaurant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="categories">
+        <item >Pizza</item>
+        <item >Sandwishes</item>
+        <item >Warm Drinks</item>
+        <item >Cold Drinks</item>
+    </string-array>
+    <string-array name="PizzaContent">
+        <item >Four Seasons</item>
+        <item >Margarita</item>
+    </string-array>
+    <string-array name="SandwishesContent">
+        <item >Potatoes</item>
+        <item >Chicken</item>
+        <item >Meat</item>
+    </string-array>
+    <string-array name="WDrinksContent">
+        <item >Tea</item>
+        <item >Cofee</item>
+        <item >Nescafe</item>
+        <item >Capuccino</item>
+        <item >Cocoa</item>
+    </string-array>
+    <string-array name="CDrinksContent">
+        <item >Orange Juice</item>
+        <item >Lemon Juice</item>
+        <item >Cola</item>
+        <item >Water</item>
+    </string-array>
+
+</resources>
