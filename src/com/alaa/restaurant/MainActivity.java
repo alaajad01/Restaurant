@@ -31,6 +31,7 @@ public class MainActivity extends Activity implements FragmentA.Communicator{
         fa=(FragmentA) manager.findFragmentById(R.id.fragment1);
         fa.setComm(this);
         dbh=new DatabaseHelper(this);
+        db = dbh.getWritableDatabase();
         dbh.onCreate(db);
         btn=(Button)findViewById(R.id.btn_addCategory);
         txt=(EditText)findViewById(R.id.txt_addCategory);
@@ -38,16 +39,17 @@ public class MainActivity extends Activity implements FragmentA.Communicator{
 			
 			@Override
 			public void onClick(View arg0) {
-			/*	if(validation()){
+                if (validation()) {
 					boolean status;
 					status=dbh.AddCategory(txt.getText().toString());
 					if(status)
 						printMsg("New Category Added");
-			}*/}
+                }
+            }
 		});
     }
     public boolean validation(){
-    	if(txt.getText().toString()=="")
+        if (txt.getText().toString().equals("")) {
     	{
     		printMsg("Name is required");
     		return false;
